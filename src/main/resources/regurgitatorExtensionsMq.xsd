@@ -11,9 +11,16 @@
 	<xs:complexType name="create-jms-response">
 		<xs:complexContent>
 			<xs:extension base="rg:create-response">
+				<xs:attribute name="jms-message-id" type="rgc:populated-string"/>
+				<xs:attribute name="jms-type" type="rgc:populated-string"/>
 				<xs:attribute name="jms-destination" type="rgc:populated-string"/>
 				<xs:attribute name="jms-correlation-id" type="rgc:populated-string"/>
-				<xs:attribute name="jms-type" type="rgc:populated-string"/>
+				<xs:attribute name="jms-delivery-mode" type="xs:integer"/>
+				<xs:attribute name="jms-expiration" type="rgc:populated-string"/>
+				<xs:attribute name="jms-priority" type="rgc:populated-string"/>
+				<xs:attribute name="jms-redelivered" type="xs:boolean"/>
+				<xs:attribute name="jms-reply-to" type="rgc:populated-string"/>
+				<xs:attribute name="jms-timestamp" type="xs:long"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
