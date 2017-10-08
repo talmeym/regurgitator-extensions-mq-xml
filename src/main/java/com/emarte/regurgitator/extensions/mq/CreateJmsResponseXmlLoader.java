@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2017 Miles Talmey.
+ * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+ */
 package com.emarte.regurgitator.extensions.mq;
 
 import com.emarte.regurgitator.core.*;
@@ -21,7 +25,7 @@ public class CreateJmsResponseXmlLoader implements XmlLoader<CreateJmsResponse> 
 		String deliveryMode = getAttribute(element, JMS_DELIVERY_MODE);
 		String expiration = getAttribute(element, JMS_EXPIRATION);
 		String priority = getAttribute(element, JMS_PRIORITY);
-		String redelivered = getAttribute(element, JMS_REDELiVERED);
+		String redelivered = getAttribute(element, JMS_REDELIVERED);
 		String replyTo = getAttribute(element, JMS_REPLY_TO);
 		String timestamp = getAttribute(element, JMS_TIMESTAMP);
 		return new CreateJmsResponse(response, messageId, type, destination, correlationId, deliveryMode, expiration, priority, redelivered, replyTo, timestamp);
