@@ -2,30 +2,30 @@
 <!--Copyright (C) 2017 Miles Talmey.-->
 <!--Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:rg="http://core.regurgitator.emarte.com"
-		   xmlns:rgc="http://common.regurgitator.emarte.com"
-		   xmlns:rgm="http://mq.extensions.regurgitator.emarte.com"
-		   targetNamespace="http://mq.extensions.regurgitator.emarte.com" elementFormDefault="qualified">
+           xmlns:rg="http://core.regurgitator.emarte.com"
+           xmlns:rgc="http://common.regurgitator.emarte.com"
+           xmlns:rgm="http://mq.extensions.regurgitator.emarte.com"
+           targetNamespace="http://mq.extensions.regurgitator.emarte.com" elementFormDefault="qualified">
 
-	<xs:import schemaLocation="regurgitatorCommon.xsd" namespace="http://common.regurgitator.emarte.com"/>
-	<xs:import schemaLocation="regurgitatorCore.xsd" namespace="http://core.regurgitator.emarte.com"/>
+    <xs:import schemaLocation="regurgitatorCommon.xsd" namespace="http://common.regurgitator.emarte.com"/>
+    <xs:import schemaLocation="regurgitatorCore.xsd" namespace="http://core.regurgitator.emarte.com"/>
 
-	<xs:complexType name="create-jms-response">
-		<xs:complexContent>
-			<xs:extension base="rg:create-response">
-				<xs:attribute name="jms-message-id" type="rgc:populated-string"/>
-				<xs:attribute name="jms-type" type="rgc:populated-string"/>
-				<xs:attribute name="jms-destination" type="rgc:populated-string"/>
-				<xs:attribute name="jms-correlation-id" type="rgc:populated-string"/>
-				<xs:attribute name="jms-delivery-mode" type="xs:integer"/>
-				<xs:attribute name="jms-expiration" type="rgc:populated-string"/>
-				<xs:attribute name="jms-priority" type="rgc:populated-string"/>
-				<xs:attribute name="jms-redelivered" type="xs:boolean"/>
-				<xs:attribute name="jms-reply-to" type="rgc:populated-string"/>
-				<xs:attribute name="jms-timestamp" type="xs:long"/>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
+    <xs:complexType name="create-jms-response">
+        <xs:complexContent>
+            <xs:extension base="rg:create-response">
+                <xs:attribute name="jms-message-id" type="rgc:populated-string"/>
+                <xs:attribute name="jms-type" type="rgc:populated-string"/>
+                <xs:attribute name="jms-destination" type="rgc:populated-string"/>
+                <xs:attribute name="jms-correlation-id" type="rgc:populated-string"/>
+                <xs:attribute name="jms-delivery-mode" type="xs:integer"/>
+                <xs:attribute name="jms-expiration" type="rgc:populated-string"/>
+                <xs:attribute name="jms-priority" type="rgc:populated-string"/>
+                <xs:attribute name="jms-redelivered" type="xs:boolean"/>
+                <xs:attribute name="jms-reply-to" type="rgc:populated-string"/>
+                <xs:attribute name="jms-timestamp" type="xs:long"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
 
-	<xs:element name="create-jms-response" type="rgm:create-jms-response"/>
+    <xs:element name="create-jms-response" type="rgm:create-jms-response"/>
 </xs:schema>
