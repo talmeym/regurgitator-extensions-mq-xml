@@ -22,9 +22,9 @@ public class CreateJmsResponseXmlLoader implements XmlLoader<CreateJmsResponse> 
         String type = loadOptionalStr(element, JMS_TYPE);
         String destination = loadOptionalStr(element, JMS_DESTINATION);
         String correlationId = loadOptionalStr(element, JMS_CORRELATION_ID);
-        Integer deliveryMode = loadOptionalInt(element, JMS_DELIVERY_MODE);
+        Long deliveryMode = loadOptionalLong(element, JMS_DELIVERY_MODE);
         Long expiration = loadOptionalLong(element, JMS_EXPIRATION);
-        Integer priority = loadOptionalInt(element, JMS_PRIORITY);
+        Long priority = loadOptionalLong(element, JMS_PRIORITY);
         Boolean redelivered = loadOptionalBool(element, JMS_REDELIVERED);
         String replyTo = loadOptionalStr(element, JMS_REPLY_TO);
         Long timestamp = loadOptionalLong(element, JMS_TIMESTAMP);
