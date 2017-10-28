@@ -11,5 +11,5 @@ start your reading here: [regurgitator-all](http://github.com/talmeym/regurgitat
 a create-jms-response step returns a response from regurgitator, allowing ``response-metadata`` parameters to be set, eg. ``jms-destination``, ``correlation-id`` and ``jms-type``:
 
 ```xml
-<rgw:create-http-response source="response" jms-message-id="message-id" jms-type="my-jms-type" jms-destination="queue://my-destination" correlation-id="52908d79-b7c6-4e18-ab13-e991d1b67d8b" jms-priority="4" jms-delivery-mode="PERSISTENT" jms-expiration="1506253192636" jms-redelivered="true" jms-reply-to="queue://other-destination" jms-timestamp="1506253192636" />
+<rgw:create-http-response source="response" jms-message-id="message-id" jms-type="my-jms-type" jms-destination="queue://my-destination" correlation-id="52908d79-b7c6-4e18-ab13-e991d1b67d8b" jms-priority="4" jms-delivery-mode="1" jms-expiration="1506253192636" jms-redelivered="true" jms-reply-to="queue://other-destination" jms-timestamp="1506253192636" />
 ```
