@@ -27,5 +27,11 @@
         </xs:complexContent>
     </xs:complexType>
 
+    <xs:complexType name="jms-call">
+        <xs:attribute name="id" type="rgc:populated-string"/>
+        <xs:attribute name="destination" type="rgc:populated-string" use="required"/>
+    </xs:complexType>
+
     <xs:element name="create-jms-response" type="rgm:create-jms-response"/>
+    <xs:element name="jms-call" type="rgm:jms-call"/>
 </xs:schema>
