@@ -16,7 +16,7 @@ import static com.emarte.regurgitator.core.XmlConfigUtil.*;
 import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseXmlLoader implements XmlLoader<CreateJmsResponse> {
-    private CreateResponseXmlLoader createResponseXmlLoader = new CreateResponseXmlLoader();
+    private final CreateResponseXmlLoader createResponseXmlLoader = new CreateResponseXmlLoader();
 
     @Override
     public CreateJmsResponse load(Element element, Set<Object> allIds) throws RegurgitatorException {
