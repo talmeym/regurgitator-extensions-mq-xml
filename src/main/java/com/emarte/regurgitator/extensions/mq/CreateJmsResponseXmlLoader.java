@@ -4,10 +4,7 @@
  */
 package com.emarte.regurgitator.extensions.mq;
 
-import com.emarte.regurgitator.core.CreateResponse;
-import com.emarte.regurgitator.core.CreateResponseXmlLoader;
-import com.emarte.regurgitator.core.RegurgitatorException;
-import com.emarte.regurgitator.core.XmlLoader;
+import com.emarte.regurgitator.core.*;
 import org.w3c.dom.Element;
 
 import java.util.Set;
