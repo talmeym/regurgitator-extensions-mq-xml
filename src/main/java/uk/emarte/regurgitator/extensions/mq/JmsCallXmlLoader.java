@@ -2,18 +2,18 @@
  * Copyright (C) 2017 Miles Talmey.
  * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
  */
-package com.emarte.regurgitator.extensions.mq;
+package uk.emarte.regurgitator.extensions.mq;
 
-import com.emarte.regurgitator.core.Log;
-import com.emarte.regurgitator.core.RegurgitatorException;
-import com.emarte.regurgitator.core.XmlLoader;
+import uk.emarte.regurgitator.core.Log;
+import uk.emarte.regurgitator.core.RegurgitatorException;
+import uk.emarte.regurgitator.core.XmlLoader;
 import org.w3c.dom.Element;
 
 import java.util.Set;
 
-import static com.emarte.regurgitator.core.XmlConfigUtil.loadId;
-import static com.emarte.regurgitator.core.XmlConfigUtil.loadMandatoryStr;
-import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.DESTINATION;
+import static uk.emarte.regurgitator.core.XmlConfigUtil.loadId;
+import static uk.emarte.regurgitator.core.XmlConfigUtil.loadMandatoryStr;
+import static uk.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.DESTINATION;
 
 public class JmsCallXmlLoader implements XmlLoader<JmsCall> {
     private static final Log log = Log.getLog(JmsCallXmlLoader.class);
