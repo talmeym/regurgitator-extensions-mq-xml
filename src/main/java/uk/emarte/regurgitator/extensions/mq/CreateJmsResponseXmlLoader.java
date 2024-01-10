@@ -4,11 +4,11 @@
  */
 package uk.emarte.regurgitator.extensions.mq;
 
+import org.w3c.dom.Element;
 import uk.emarte.regurgitator.core.CreateResponse;
 import uk.emarte.regurgitator.core.CreateResponseXmlLoader;
 import uk.emarte.regurgitator.core.RegurgitatorException;
 import uk.emarte.regurgitator.core.XmlLoader;
-import org.w3c.dom.Element;
 
 import java.util.Set;
 
