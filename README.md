@@ -51,5 +51,5 @@ If instead you wish the ``jms-call`` step to create an independent jms message, 
 a create-jms-response step returns a response from regurgitator, allowing ``response-metadata`` parameters to be set, e.g. ``jms-destination``, ``jms-correlation-id`` and ``jms-type``:
 
 ```xml
-<rgw:create-http-response source="response" jms-message-id="message-id" jms-type="my-jms-type" jms-destination="queue://my-destination" correlation-id="52908d79-b7c6-4e18-ab13-e991d1b67d8b" jms-priority="4" jms-delivery-mode="1" jms-expiration="1506253192636" jms-redelivered="true" jms-reply-to="queue://other-destination" jms-timestamp="1506253192636" />
+<rgw:create-jms-response source="response" jms-message-id="message-id" jms-type="my-jms-type" jms-destination="queue://my-destination" correlation-id="52908d79-b7c6-4e18-ab13-e991d1b67d8b" jms-priority="4" jms-delivery-mode="1" jms-expiration="1506253192636" jms-redelivered="true" jms-reply-to="queue://other-destination" jms-timestamp="1506253192636" />
 ```
