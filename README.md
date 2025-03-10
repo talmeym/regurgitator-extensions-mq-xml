@@ -6,8 +6,6 @@ start your reading here: [regurgitator-all](https://talmeym.github.io/regurgitat
 
 read more about regurgitator in xml here: [regurgitator-core-xml](https://talmeym.github.io/regurgitator-core-xml#xml-configuration-of-regurgitator)
 
-[``apidocs``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-xml/0.1.3/)
-
 ## extension mq steps in xml
 
 ### jms-call
@@ -57,3 +55,6 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
 ```xml
 <rgm:create-jms-response source="response" jms-message-id="message-id" jms-type="my-jms-type" jms-destination="queue://my-destination" correlation-id="52908d79-b7c6-4e18-ab13-e991d1b67d8b" jms-priority="4" jms-delivery-mode="1" jms-expiration="1506253192636" jms-redelivered="true" jms-reply-to="queue://other-destination" jms-timestamp="1506253192636" />
 ```
+---
+
+api docs: [``0.1.4``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-xml/0.1.4/){:target="_blank"} [``0.1.3``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-xml/0.1.3/){:target="_blank"} [``0.1.2``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-xml/0.1.2/){:target="_blank"}
